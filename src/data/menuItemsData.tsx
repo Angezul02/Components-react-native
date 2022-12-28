@@ -53,4 +53,9 @@ export const menuItems: MenuItem[] = [
     icon: 'infinite',
     components: 'InfiniteScrollScreen',
   },
+  {
+    name: 'Animation 10 Slide ',
+    icon: 'send',
+    components: 'SlideScreen',
+  },
 ];
