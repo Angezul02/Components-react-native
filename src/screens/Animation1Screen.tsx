@@ -1,9 +1,12 @@
 import React, { useEffect, useRef } from 'react'
 import { Text, View, StyleSheet, Animated, Button, Easing } from 'react-native';
 import useAnimation from '../hooks/useAnimation';
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext/ThemeContext';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const Animation1Screen = () => {
-
+  const {theme:{colors}} = useContext(ThemeContext)
   const {fadeIn, fadeOut, position, opacity, startPosition}=useAnimation()
 
   return (
@@ -24,11 +27,13 @@ const Animation1Screen = () => {
           fadeIn(),
           startPosition(-100)
         }}
+        color={colors.primary}
         />
 
         <Button
         title='Desaparece'
         onPress={fadeOut}
+        color={colors.primary}
         />
           
     </View>

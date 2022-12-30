@@ -58,4 +58,11 @@ export const menuItems: MenuItem[] = [
     icon: 'send',
     components: 'SlideScreen',
   },
+
+  {
+    name: 'Animation 11 Change Theme ',
+    icon: 'contrast',
+    components: 'ChangeThemeScreen',
+  },
+
 ];
